@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Square component Should match a snapshot 1`] = `
+<div>
+  <button
+    class="squares X"
+  >
+    X
+  </button>
+</div>
+`;

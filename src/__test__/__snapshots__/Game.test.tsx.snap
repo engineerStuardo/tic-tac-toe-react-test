@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game component Should match a snapshot 1`] = `
+<div>
+  <h1
+    data-testid="title"
+  >
+    Tic Tac Toe - React Test
+  </h1>
+  <div
+    class="board"
+    data-testid="board"
+  >
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+    <button
+      class="squares"
+    />
+  </div>
+  <div
+    class="info-wrapper"
+    data-testid="info-wrapper"
+  >
+    <div>
+      <h3>
+        History
+      </h3>
+      <li>
+        <button>
+          Go to Start
+        </button>
+      </li>
+    </div>
+    <h3>
+      Next Player: X
+    </h3>
+  </div>
+</div>
+`;
