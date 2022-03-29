@@ -1,10 +1,10 @@
-import React from 'react';
-
 import Board from './components/Board';
+import Moves from './components/Moves';
 import { useCalculation } from './hooks/useCalculation';
 
 function App() {
-  const { history, stepNumber, handleClick } = useCalculation();
+  const { history, stepNumber, handleClick, jumpTo, winner, xO } =
+    useCalculation();
 
   return (
     <>
@@ -13,9 +13,9 @@ function App() {
       <div data-testid='info-wrapper' className='info-wrapper'>
         <div>
           <h3>History</h3>
-          {/* Build moves history component */}
+          <Moves history={history} jumpTo={jumpTo} />
         </div>
-        {/* Showing winnier or next player */}
+        <h3>{winner ? 'Winner: ' + winner : 'Next Player: ' + xO}</h3>
       </div>
     </>
   );

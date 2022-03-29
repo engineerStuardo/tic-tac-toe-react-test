@@ -8,3 +8,8 @@ export interface BoardProps {
   squares: number[];
   onClick: (i: number) => void;
 }
+
+export interface MovesProps {
+  history: any[];
+  jumpTo: (value: number) => void;
+}

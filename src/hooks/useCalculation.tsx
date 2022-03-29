@@ -22,5 +22,10 @@ export const useCalculation = () => {
     setXisNext(!xIsNext);
   };
 
-  return { history, stepNumber, handleClick, winner, xO };
+  const jumpTo = (step: number) => {
+    setStepNumber(step);
+    setXisNext(step % 2 === 0);
+  };
+
+  return { history, stepNumber, handleClick, jumpTo, winner, xO };
 };
